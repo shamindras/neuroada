@@ -1,3 +1,5 @@
+[![Travis build status](https://travis-ci.org/shamindras/neuroada.svg?branch=master)](https://travis-ci.org/shamindras/neuroada)
+
 # neuroada
 
 The goal of neuroada is to ...

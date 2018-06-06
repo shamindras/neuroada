@@ -335,6 +335,13 @@ diff_mat_threshold <- function(inp_mat, lower_th = -0.9, upper_thr = 0.9){
     base::return(inp_mat)
 }
 
+#' Title
+#'
+#' @param inp_mat_abs
+#' @param abs_thr
+#'
+#' @return
+#' @export
 mat_abs_threshold_test <- function(inp_mat_abs, abs_thr){
     inp_mat_abs[inp_mat_abs >= abs_thr] <- 0
     base::return(inp_mat_abs)
@@ -635,6 +642,17 @@ erp_rbind_sessions <- function(erp_df_lab1, erp_df_lab2){
                              , ~ rbind(.x, .y)))
 }
 
+#' Title
+#'
+#' @param n_data_type
+#' @param n_patient_num
+#' @param session_index
+#' @param task
+#' @param filter
+#' @param channel_index
+#'
+#' @return
+#' @export
 erp_create_df_labeled <- function(n_data_type,
                                   n_patient_num,
                                   session_index,

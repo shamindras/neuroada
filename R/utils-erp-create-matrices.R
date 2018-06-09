@@ -604,7 +604,7 @@ create_corr_ts <- function(inp_cormat, cat_idx, time_ms_idx
     p1 <- ggplot2::ggplot(data = cormat_tidy
                           , aes(channel_x, channel_y, fill = value)) +
         ggplot2::geom_tile(color = "white") +
-        ggplot2::scale_fill_gradient2(low = "red", high = "blue"
+        ggplot2::scale_fill_gradient2(low = "blue", high = "red"
                                       , mid = "white",
                                       midpoint = 0, limit = plot_col_range
                                       , space = "Lab",
@@ -662,7 +662,7 @@ erp_create_df_labeled <- function(n_data_type,
 
     # Output directory to unzip the tar file
     out_dir_path <- stringr::str_c("P", n_patient_num, "_fullset") %>%
-        here::here(n_data_type, .)
+        here::here("data", n_data_type, .)
     out_dir_path
 
     # GET the list of all files in the unzipped folder

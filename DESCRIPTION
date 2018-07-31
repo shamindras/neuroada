@@ -8,12 +8,19 @@ Encoding: UTF-8
 LazyData: true
 ByteCompile: true
 Imports: 
-    tidyverse,
     magrittr,
     rlang (>= 0.1.2),
     here,
     pryr,
-    signal
+    signal,
+    ggplot2,
+    dplyr,
+    tidyr,
+    readr,
+    purrr,
+    tibble,
+    stringr,
+    forcats
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 6.0.1
 Suggests: 
